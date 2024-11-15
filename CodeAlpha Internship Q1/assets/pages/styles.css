@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #810000;
+    color: #fff4f4;
+    padding: 20px;
+    position: relative; 
+}
+
+
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo {
+    width: 80px; 
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.3);
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(0, 136, 255);
+    margin-top: 100px; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+p {
+    color: #fff;
+    font-size: 1rem;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+}
+
+
+.gallery {
+    display: flex;
+    overflow: hidden;
+}
+
+.gallery-image {
+    display: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gallery-image.active {
+    display: block;
+}
+
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    border-radius: 5px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
